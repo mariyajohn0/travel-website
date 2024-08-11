@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Logan Mountain</title>
+    <link rel="stylesheet" href="css/popular.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header-container"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                    initializeHeaderScripts();
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    
+    <main>
+        <section class="logan section" id="logan">
+            <div class="logan__wrapper">
+                <img src="img/mountlogan.webp" alt="logan image" class="logan__bg">
+                <div class="logan__container container grid">
+                    <div class="logan__data">
+                        <h1 class="logan__title">
+                            Logan Mountain
+                        </h1>
+                        <h3 class="logan__subtitle">
+                            <i class="ri-map-pin-line"></i>Yukon, Canada
+                        </h3>
+                        <p class="logan__description">
+                            Experience stunning vistas and challenging trails at Logan Mountain, 
+                            a paradise for outdoor adventurers and nature enthusiasts.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Mount_Logan" target="_blank" class="button">
+                            Click to know more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-container"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-container").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+    
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="js/main.js"></script>
+</body>
+</html>

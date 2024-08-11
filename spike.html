@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Spike Island</title>
+    <link rel="stylesheet" href="css/popular.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                    initializeHeaderScripts();
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+
+    <main>
+        <section class="spike section" id="spike">
+            <div class="spike__wrapper">
+                <img src="img/spikeforest.webp" alt="spike image" class="spike__bg">
+                <div class="spike__container container grid">
+                    <div class="spike__data">
+                        <h1 class="spike__title">Spike Island</h1>
+                        <h3 class="spike__subtitle">
+                            <i class="ri-map-pin-line"></i> Cork Harbour, Ireland
+                        </h3>
+                        <p class="spike__description">
+                            Explore the rich history and scenic beauty of Spike Island, 
+                            Ireland's captivating destination with a fascinating past and stunning coastal views.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Spike_Island,_County_Cork" target="_blank" class="button">
+                            Click to know more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-container").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                    initializeHeaderScripts();
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+
+    <main>
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        Learn More <br>
+                        About Travel
+                    </h2>
+                    <p class="about__description">
+                        All the trips around the world are a great 
+                        pleasure and happiness for anyone, enjoy 
+                        the sights when you travel the world. Travel 
+                        safely and without worries, get your trip and 
+                        explore the paradises of the world.
+                    </p>
+                    <a href="explore.html" class="button">
+                        Explore Travel<i class="ri-arrow-right-fill"></i>
+                    </a>
+                </div>
+                <div class="about__image">
+                    <img src="img/about-beach.webp" alt="about image" class="about__image">
+                    <div class="about__shadow"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-container").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Popular</title>
+    <link rel="stylesheet" href="css/popular.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                    initializeHeaderScripts();
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+
+    <main>
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Enjoy The Beauty <br>
+                Of The World
+            </h2>
+
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <a href="logan.html">
+                            <img src="img/popular-mountain.webp" alt="popular image" class="popular__img">
+                        </a>
+                        <div class="popular__shadow"></div>
+                    </div>
+                    <h2 class="popular__title">
+                        Logan Mountain
+                    </h2>
+                    <div class="popular__location">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Canada</span>
+                    </div>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <a href="spike.html">
+                            <img src="img/popular-forest.webp" alt="popular image" class="popular__img">
+                        </a>
+                        <div class="popular__shadow"></div>
+                    </div>
+                    <h2 class="popular__title">
+                        Spike Forest
+                    </h2>
+                    <div class="popular__location">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Ireland</span>
+                    </div>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <a href="garda.html">
+                            <img src="img/popular-lake.webp" alt="popular image" class="popular__img">
+                        </a>
+                        <div class="popular__shadow"></div>
+                    </div>
+                    <h2 class="popular__title">
+                        Garda Lake
+                    </h2>
+                    <div class="popular__location">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Italy</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-container").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

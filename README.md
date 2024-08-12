@@ -10,10 +10,8 @@ HTML5
 CSS3
 JavaScript
 
-Installation
-Clone the repository: 
+Clone the repository: https://github.com/mariyajohn0/travel-website.git
 
-Usage
 Navigate through the website:
 1.Home: Overview of the travel website.
 2.About: Learn more about the mission and vision of the travel agency.

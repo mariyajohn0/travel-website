@@ -1,31 +1,34 @@
-Travel Website
+# Travel Website 
 
-Project Overview:
-The Travel Website is a modern, responsive web application designed to provide users with a seamless experience as they explore various travel destinations. 
-The website features multiple pages, including home, about, popular destinations, and exploration options. Users can navigate through the site easily, 
-view detailed information about various locations, and interact with the responsive menu designed for both desktop and mobile screens.
+The **Travel Website** is a modern, responsive web application crafted to provide an immersive experience for users exploring various travel destinations. The website features multiple pages with a clean and user-friendly design, showcasing travel destinations, exploration options, and agency details.
 
-Technologies Used:
-HTML5
-CSS3
-JavaScript
+## Project Overview  
+This project is designed to:  
+- Provide detailed information about popular and lesser-known travel destinations.  
+- Feature a seamless navigation experience across devices, including responsive menus.  
+- Include visually appealing scroll effects, like a blur effect on the header during scrolling.  
 
-Clone the repository: https://github.com/mariyajohn0/travel-website.git
+## Technologies Used  
+- **HTML5**: For structuring the web pages.  
+- **CSS3**: For styling and responsiveness.  
+- **JavaScript**: For interactivity and dynamic functionality.  
 
-Navigate through the website:
-1.Home: Overview of the travel website.
-2.About: Learn more about the mission and vision of the travel agency.
-3.Popular: Explore the most popular travel destinations.
-4.Explore: Find more travel options and explore lesser-known locations.
+## Features  
 
-Responsive Menu:
-On mobile devices, use the hamburger menu icon to open the navigation menu.
-Click on the close icon to hide the menu.
+### Pages  
+1. **Home**: An overview of the travel website.  
+2. **About**: Insight into the travel agency’s mission and vision.  
+3. **Popular Destinations**: Highlights the most sought-after travel spots.  
+4. **Explore**: Focuses on exploration options for lesser-known locations.  
 
-Scroll Effects:
-The header will gain a blur effect when scrolling down the page.
+### Navigation  
+- A **responsive menu** that adapts to both desktop and mobile screens.  
+  - **Mobile Menu**: Features a hamburger icon for opening the menu and a close icon for hiding it.  
 
-Project Structure
+### Visual Effects  
+- Scroll-triggered effects, including a blur effect on the header when scrolling down.  
+
+## Project Structure  
 Travel-Website/
 │
 ├── index.html
@@ -68,3 +71,8 @@ css/popular.css: Styles for the Popular page.
 css/header-footer.css: Styles specific to the header and footer components.
 js/main.js: JavaScript file for handling interactivity, including the navigation menu.
 images/: Contains images used throughout the website.
+
+### Clone the Repository  
+Clone the project using the following command:  
+```bash  
+git clone https://github.com/mariyajohn0/travel-website.git

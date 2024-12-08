@@ -56,22 +56,30 @@ Travel-Website/
 │
 └── README.md
 
-index.html: The main landing page.
-about.html: Information about the travel agency.
-explore.html: Exploration options for lesser-known locations.
-popular.html: Displays popular travel destinations.
-header.html: Common header component for the website.
-footer.html: Common footer component for the website.
-logan.html: A dedicated page for Logan Mountain.
-spike.html: A dedicated page for Spike Island.
-garda.html: A dedicated page for Garda Lake.
-css/styles.css: The main CSS file for general styling.
-css/custom.css: Custom styles for specific elements.
-css/popular.css: Styles for the Popular page.
-css/header-footer.css: Styles specific to the header and footer components.
-js/main.js: JavaScript file for handling interactivity, including the navigation menu.
-images/: Contains images used throughout the website.
+#### HTML Files  
+- **index.html**: The main landing page.  
+- **about.html**: Information about the travel agency.  
+- **explore.html**: Exploration options for lesser-known locations.  
+- **popular.html**: Displays popular travel destinations.  
+- **header.html**: Common header component for the website.  
+- **footer.html**: Common footer component for the website.  
+- **logan.html**: A dedicated page for Logan Mountain.  
+- **spike.html**: A dedicated page for Spike Island.  
+- **garda.html**: A dedicated page for Garda Lake.  
 
+#### CSS Files  
+- **css/styles.css**: The main CSS file for general styling.  
+- **css/custom.css**: Custom styles for specific elements.  
+- **css/popular.css**: Styles for the Popular page.  
+- **css/header-footer.css**: Styles specific to the header and footer components.  
+
+#### JavaScript Files  
+- **js/main.js**: Handles interactivity, including the navigation menu.  
+
+#### Images  
+- **images/**: Contains all images used throughout the website.
+
+  
 ### Clone the Repository  
 Clone the project using the following command:  
 ```bash  
